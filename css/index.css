@@ -1,48 +1,179 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header{
-    display: flex;
-    background-color: black;
-    border-radius: 10px;
-    /* align-items: center; */
+html {
+  scroll-behavior: smooth;
 }
 
-.headerLogo{
-    padding: 0px 0px;
+body {
+  font-family: "Baloo Bhaina 2", cursive;
 }
 
-.headerLogoImg{
-    filter: invert(100%);
+.header {
+  display: flex;
+  background-color: black;
+  color: white;
+  /* border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
+  align-items: center;
+  justify-content: space-between;
+  /* position: sticky; */
 }
 
-.headerNav{
-    margin: 10px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.headerLogoImg {
+  margin: 0px 30px;
+  filter: invert(100%);
+  height: 60px;
+  vertical-align: bottom;
 }
 
-.headerNavList{
-    display: flex;
-    flex-direction: row;
+.headerNavList {
+  display: flex;
 }
 
-.headerNavListItem{
-    list-style: none;
-    cursor: pointer;
-    padding: 0px 20px;
+.headerNavListItem {
+  /* border: 2px solid rgb(185, 185, 153); */
+  list-style: none;
+  padding: 2px 30px;
 }
 
-.headerBtn{
-    align-self: flex-end;
+.headerNavListItem a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
 }
 
-.headerBtnSearch{
-    margin-left: 500px;
-    padding: 10px 50px;
+.headerNavListItem a:hover,
+.headerNavListItem a.active {
+  color: grey;
+  text-decoration: underline;
 }
 
+.headerBtn {
+  /* border: 2px solid rgb(185, 185, 153); */
+  margin-right: 10px;
+}
+
+.headerBtnSearch {
+  border-radius: 10px;
+  border: 2px solid grey;
+  padding: 5px 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.headerBtnSearch:hover {
+  background-color: grey;
+}
+
+.info {
+  background: url("/img/img_1.jpg") no-repeat center center/cover;
+  height: 600px;
+  opacity: 80%;
+}
+
+.info h1 {
+  color: white;
+  margin: 0px 20px;
+  padding: 20px;
+  font-size: 40px;
+}
+
+.info p {
+  color: white;
+  margin: 0px 20px;
+  padding: 20px;
+  width: 50%;
+}
+
+.coding {
+  background-image: url("https://source.unsplash.com/weekly?coding");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  opacity: 80%;
+  border: 2px solid white;
+  color: white;
+  height: 600px;
+  width: 100%;
+}
+
+.codingHeading {
+  text-align: center;
+  font-size: 40px;
+}
+
+.codingItem {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.codingItems {
+  border: 2px solid rgb(255, 255, 255);
+  height: 300px;
+  width: 30%;
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+
+.webdev {
+  background-image: url("https://source.unsplash.com/weekly?computer");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  opacity: 80%;
+  border: 2px solid white;
+  color: white;
+  height: 600px;
+  width: 100%;
+}
+
+.webdevHeading {
+  text-align: center;
+  font-size: 40px;
+}
+
+.webdevItem {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.webdevItems {
+  border: 2px solid rgb(255, 255, 255);
+  height: 300px;
+  width: 30%;
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+
+.footer {
+  background-color: black;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_copyright {
+  margin: 0px 20px;
+}
+
+.footer_social_list {
+  display: flex;
+}
+
+.footer_social_list_item {
+  margin: 10px 20px;
+  list-style: none;
+}
+
+.footer_social_list_item a {
+  color: white;
+}
