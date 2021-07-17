@@ -43,6 +43,10 @@ body {
   line-height: 1.5;
 }
 
+.highlight {
+  background-color: rgb(116, 116, 105);
+}
+
 /* Header  */
 .header::before {
   content: "";
@@ -121,6 +125,8 @@ body {
 .info {
   height: 80vh;
   padding: 0.5em 4em;
+  display: flex;
+  flex-direction: column;
 }
 
 .infoHeading {
@@ -134,18 +140,10 @@ body {
   font-weight: var(--fw-2);
 }
 
-.infoPara {
-  width: 50vw;
-}
-
 .infoQuote {
   padding: 0.3em 1em;
   font-size: 1.5em;
-}
-
-.info > div {
   background-color: rgba(128, 128, 128, 0.356);
-  height: 5em;
   width: 45%;
   border-radius: 20px;
 }
@@ -154,37 +152,11 @@ body {
   .info {
     padding: 0 4em;
   }
-
-  .infoHeading > strong {
-    display: inline-block;
-  }
-
-  .infoPara {
-    width: 100%;
-  }
-
-  .infoQuote {
-    font-size: 1em;
-    padding: 0.4rem 1rem;
-  }
-
-  .info > div {
-    height: 3rem;
-    width: 90%;
-  }
 }
 
 @media (max-width: 800px) {
   .info {
     font-size: 2em;
-  }
-
-  .infoHeading > strong {
-    display: block;
-  }
-
-  .info > div {
-    height: 15rem;
   }
 }
 
@@ -196,10 +168,6 @@ body {
 
   .infoHeading > strong {
     display: inline-block;
-  }
-
-  .info > div {
-    height: 20rem;
   }
 }
 
