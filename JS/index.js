@@ -3,11 +3,11 @@ function searchFun() {
     let searchInput = document.getElementById("headerSearch").value;
     let searchValue = document.getElementsByClassName("search");
 
-    for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < 3; i++) {
         searchValue[i].classList.remove("highlight");
     }
 
-    for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < 3; i++) {
         let checkValue = searchValue[i].innerText;
 
         if (checkValue.indexOf(searchInput) > -1 && (searchInput != "")) {
@@ -15,5 +15,5 @@ function searchFun() {
         }
     }
 
-    searchInput.value = "";
+    document.getElementById("headerSearch").value = "";
 }
