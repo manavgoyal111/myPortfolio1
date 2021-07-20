@@ -1,4 +1,4 @@
-# Portfolio Website Template 1
+# Single Page Portfolio
 
 This is a template design of a portfolio website. You can add multiple projects on different topics.
 
